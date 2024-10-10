@@ -1,57 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter:wght@200;400;500;600;700&display=swap');
-
-body {
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 5px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 18px;
-  line-height: 1.6em;
+html, body {
+    max-width: 600px;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.caption {
-  margin-top: 0;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
-  line-height: 1.2em;
+  body {
+    background-color: #F3EDE0; /* Pantone Cannoli Cream */
+    color: #333333;
 }
 
-h1, h2 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 200;
+/* For small screens */
+@media (max-width: 767px) {
+    html {
+      width: 90%;
+      padding: 5px;
+    }
+}
+
+hr.round {
+    border: 1.5px solid #B88A6E;
+    border-radius: 3px;
+}
+
+nav {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+nav > a {
+  margin-right:10px;
+}
+
+/* Typography */ 
+
+p {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 130%;
+    hyphens: auto;
 }
 
 h1 {
-  font-size:2.5em;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
 }
 
 h3 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
 }
 
-img {
-  max-width: 100%;
-}
-
-.special-link {
-  color: #1E90FF;
-}
-
-.special-link:hover {
-  border-bottom: 1.5px solid #1E90FF;
-}
+/* Links */ 
 
 a {
-  color: black;
-  text-decoration: none;
+  text-decoration: none; /* Removes underline */
+  color: #6B9A3A; /* Default link color */
+  transition: background-color 0.3s ease; /* Smooth transition for the highlight */
 }
+
 
 a:hover {
-  border-bottom: 1.5px solid black;
+  background-color: rgba(85, 139, 47, 0.2);
+  border-radius: 3px; /* Optional: Adds a slight rounding to the highlight */
+  transition: background-color 0.3s ease-out;
 }
 
-hr.footer {
-  margin-top:50px;
-  border: 1px solid black;
+/* Photos */
+
+.photo-matte {
+    background-color: #F5F5F5; 
+    padding:20px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.photo-matte > p {
+    color:#121212;
+    font-size:13px;
+    text-align:center;
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* Fonts */
+
+.source-serif-4-body {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-header-1 {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.inter-header-2 {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
